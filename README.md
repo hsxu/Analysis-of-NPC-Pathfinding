@@ -24,12 +24,14 @@ Heatmap 3: Max. value of 300
 ![Screenshot](heatmap300.png)
 
 k-means clustering with k = 2:
+
 Centroids at 
 [[ 43.2688305   62.31251932]
  [ 44.91405606  49.27699918]]
 ![Screenshot](kmeans2.png)
 
-k-means clustering, k = 3
+k-means clustering, k = 3: 
+
 Centroids at 
 [[ 43.80525666  65.02681249]
  [ 42.80493402  57.60508701]
@@ -37,6 +39,7 @@ Centroids at
 ![Screenshot](kmeans3.png)
 
 k-means clustering, k = 4
+
 Centroids at 
 [[ 46.88892289  64.21603427]
  [ 45.33934338  47.6477395 ]
