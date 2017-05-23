@@ -24,27 +24,27 @@ Heatmap 3: Max. value of 300
 ![Screenshot](heatmap300.png)
 
 k-means clustering with k = 2:
+![Screenshot](kmeans2.png)
 
 Centroids at 
 [[ 43.2688305   62.31251932]
  [ 44.91405606  49.27699918]]
-![Screenshot](kmeans2.png)
 
 k-means clustering, k = 3: 
+![Screenshot](kmeans3.png)
 
 Centroids at 
 [[ 43.80525666  65.02681249]
  [ 42.80493402  57.60508701]
  [ 45.28231757  47.54878382]]
-![Screenshot](kmeans3.png)
 
 k-means clustering, k = 4
+![Screenshot](kmeans4.png)
 
 Centroids at 
 [[ 46.88892289  64.21603427]
  [ 45.33934338  47.6477395 ]
  [ 42.41322654  57.52002465]
  [ 40.5410503   65.40421598]]
-![Screenshot](kmeans4.png)
 
 In my opinion, the centroids do not really provide additional information for this problem. However we can see there are two distinct areas with a high concentration of monsters. 
