@@ -12,7 +12,6 @@ Heatmap 1: All datapoints
 ![Screenshot](all_data.png)
 
 To provide some context as to what is being seen, the monsters here are enclosed in a set of walls. 
-The minimap
 ![Screenshot](rs_map.png)
 
 However there are several rogue cells that have suspiciously high frequencies that are outside of the the area of interest. We wish to remove these from our analysis. Now that the grid is more balanced, we can set the max. value of the heatmap to 500 and 300.
@@ -24,19 +23,26 @@ Heatmap 3: Max. value of 300
 ![Screenshot](heatmap300.png)
 
 k-means clustering with k = 2:
+
 Centroids at 
 [[ 43.2688305   62.31251932]
  [ 44.91405606  49.27699918]]
 ![Screenshot](kmeans2.png)
 
-k-means clustering, k = 3
+
+
+k-means clustering, k = 3: 
+
 Centroids at 
 [[ 43.80525666  65.02681249]
  [ 42.80493402  57.60508701]
  [ 45.28231757  47.54878382]]
 ![Screenshot](kmeans3.png)
 
+
+
 k-means clustering, k = 4
+
 Centroids at 
 [[ 46.88892289  64.21603427]
  [ 45.33934338  47.6477395 ]
@@ -44,4 +50,15 @@ Centroids at
  [ 40.5410503   65.40421598]]
 ![Screenshot](kmeans4.png)
 
-In my opinion, the centroids do not really provide additional information for this problem. However we can see there are two distinct areas with a high concentration of monsters. 
+In my opinion, the centroids do not really provide additional information for this problem. However we can see there are two distinct areas with a high concentration of monsters. However, the left centroid is blocked by an obstacle in the middle.
+
+# Final aggression map
+Aberrant Spectres have an aggression range of n = 2, so to create the aggression map we increment all matrix values within 2 squares for each data point. Here is the result.
+
+Aggression Map:
+![Screenshot](aggression.png)
+
+# Conclusions
+From the analysis of the problem, we can conclude that the best point to stand is in the middle of the right cluster of high density cells as there is a high density of monsters that patrol the corner.
+
+There are several factors that were not taken into account which may skew the result of the problem: Spawn points of the monsters, the fact that each monster takes up a 2x2 grid but its location is reported for one cell, and a short recording period for the data. The next step of this project will attempt to record data over several hours and also test the total time in combat for several cells near the right cluster.
