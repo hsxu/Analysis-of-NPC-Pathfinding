@@ -52,4 +52,9 @@ Centroids at
 
 
 
-In my opinion, the centroids do not really provide additional information for this problem. However we can see there are two distinct areas with a high concentration of monsters. 
+In my opinion, the centroids do not really provide additional information for this problem. However we can see there are two distinct areas with a high concentration of monsters. However, the left centroid is blocked by an obstacle in the middle.
+
+# Conclusions
+From the analysis of the problem, we can conclude that the best point to stand is in the middle of the right cluster of high density cells as there is a high density of monsters that patrol the corner.
+
+There are several factors that were not taken into account which may skew the result of the problem: Spawn points of the monsters, the fact that each monster takes up a 2x2 grid but its location is reported for one cell, and a short recording period for the data. The next step of this project will attempt to record data over several hours and also test the total time in combat for several cells near the right cluster.
