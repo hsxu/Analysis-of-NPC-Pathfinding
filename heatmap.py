@@ -5,7 +5,7 @@ matrix = [[0 for x in xrange(70)] for y in xrange(70)]
 
 f = open('text.txt')
 for line in f:
-    if line == "":
+    if line == "" or line == '\n':
         continue
     k = line.split(',')
     x = int(k[1])
