@@ -10,3 +10,15 @@ For the first attempt, we have tracked all monster (Aberrant Spectre) movements 
 
 Heatmap 1: All datapoints
 ![Screenshot](all_data.png)
+
+To provide some context as to what is being seen, the monsters here are enclosed in a set of walls. 
+The minimap
+![Screenshot](rs_map.png)
+
+However there are several rogue cells that have suspiciously high frequencies that are outside of the the area of interest. We wish to remove these from our analysis. Now that the grid is more balanced, we can set the max. value of the heatmap to 500 and 300.
+
+Heatmap 2: Max. value of 500
+![Screenshot](heatmap500.png)
+
+Heatmap 3: Max. value of 300
+![Screenshot](heatmap300.png)
