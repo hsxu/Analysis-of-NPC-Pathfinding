@@ -50,9 +50,13 @@ Centroids at
  [ 40.5410503   65.40421598]]
 ![Screenshot](kmeans4.png)
 
-
-
 In my opinion, the centroids do not really provide additional information for this problem. However we can see there are two distinct areas with a high concentration of monsters. However, the left centroid is blocked by an obstacle in the middle.
+
+# Final aggression map
+Aberrant Spectres have an aggression range of n = 2, so to create the aggression map we increment all matrix values within 2 squares for each data point. Here is the result.
+
+Aggression Map:
+![Screenshot](aggression.png)
 
 # Conclusions
 From the analysis of the problem, we can conclude that the best point to stand is in the middle of the right cluster of high density cells as there is a high density of monsters that patrol the corner.
